@@ -1,23 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { useSelector } from "react-redux";
+import { Route, Routes } from "react-router";
+import Home from "./components/home";
+import HomePage from "./components/home-page";
 
 function App() {
+  const login = useSelector((state) => state.login1);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="px-14 py-2">
+              <Home />
+              <HomePage />
+            </div>
+          }
+        />
+        <Route path="/login" element={<>Login</>} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.nav-ul > li {
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav-ul > li:hover {
+  color: #006ad0;
+  transition: 0.5s;
+  border-bottom: 2px solid;
+}
+
+.nav-search {
+  outline: none;
+}
+
+.login-btn {
+  cursor: pointer;
+}
+
+.btn-humbeurger {
+  cursor: pointer;
+  font-size: 25px;
+}
