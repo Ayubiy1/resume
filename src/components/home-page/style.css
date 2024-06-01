@@ -1,0 +1,16 @@
+.menu-btn {
+  padding: 10px;
+  color: #006ad0;
+  transition: 0.5s;
+  border-radius: 6px;
+  border: 1px solid #006ad0;
+}
+
+.menu-btn:hover {
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s;
+  border: 1px solid;
+  border-radius: 6px;
+  background-color: #006ad0;
+}

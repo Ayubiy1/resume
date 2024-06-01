@@ -1,8 +1,7 @@
 import "./App.css";
 import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router";
-import Home from "./components/home";
-import HomePage from "./components/home-page";
+import HomePage from "./components/home";
 
 function App() {
   const login = useSelector((state) => state.login1);
@@ -10,15 +9,12 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="px-14 py-2">
-              <Home />
-              <HomePage />
+        <Route path="/" element={<HomePage />} />
+        {/* 
+          <div className="px-14 py-2">
+            <HomePage /> 
             </div>
-          }
-        />
+          */}
         <Route path="/login" element={<>Login</>} />
       </Routes>
     </div>
