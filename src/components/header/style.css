@@ -24,3 +24,22 @@
   cursor: pointer;
   font-size: 25px;
 }
+
+.drop-down {
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+.drop-down:hover {
+  transition: 0.7s;
+  background-color: #80808021;
+}
+
+.btn-create {
+  height: 33px;
+  color: #fff;
+  padding: 4px 8px;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #1677ff;
+}

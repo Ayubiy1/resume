@@ -1,0 +1,13 @@
+/* .ant-layout-sider {
+  width: 350px !important;
+  background-color: aqua !important;
+} */
+
+.iii:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.ant-collapse-expand-icon {
+  display: none !important;
+}
